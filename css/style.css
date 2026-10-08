@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{margin:0; 
+  padding:0; 
+  box-sizing:border-box;}
+
+h1,h2,h3,h4,h5,h6,ul,ol,span,p{
+    margin:0;
+     padding:0;
+}
+
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+/* COMMON CSS END */
+
+:root{
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --gray: #353535;
+    --light-gray: #7a7a7a;
+    --primary: #fc0;
+}
+body{
+    font-family: var(--font-family);
+ 
+}
+
+#navbar li a{
+    padding: 18px 22px 5px;
+   
+}
+#navbar li a:hover,
+#navbar li a.active{
+    border-bottom: 1px solid var(--primary);
+    
+}
+
+@media (max-width: 992px)
+{
+   header nav{
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+   }
+   #navbar li a:hover,
+   #navbar li a.active{
+    border-bottom: none;
+   }
+}
+
+/* hero section */
+#hero .bannerCnt h4{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        color: var(--gray);
+       
+}
+
+#hero .bannerCnt h1{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 64px;
+        color: var(--gray);
+        
+}
+
+#hero .bannerCnt p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 180%;
+        color: var(--gray);
+        margin: 21px 0 53px;
+}
+.primary-btn{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 180%;
+        color: #fff;
+        border-radius: 20px;
+        padding: 16px 42px;
+        background: var(--primary);
+        display: inline-block;
+        border: 1px solid var(--primary);
+}
+.ghost{
+        
+        font-weight: 500;
+        color: var(--gray);
+        border: 1px solid var(--primary);
+        border-radius: 20px;
+        background: transparent;  
+        padding: 16px 18px;
+
+
+}
+#hero .bannerbtn a{
+    margin-right: 20px;
+}
+.primary-btn i,
+.ghost i{
+    margin-left: 10px;
+}
+
+#hero .bannerCnt .sociallinks {
+    margin-top: 48px;
+}
+#hero .bannerCnt .sociallinks h5{
+    font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 180%;
+        color: var(--gray);
+}
+#hero .bannerCnt .sociallinks a{
+     width: 40px;
+     height: 40px;
+     background-color: #f4f3f3;
+     border-radius: 50%;
+     display: inline-block;
+     color: #000;
+     text-align: center;
+     line-height: 40px;
+     margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 8px;
+}
+#hero .bannerimg img{
+ margin-top: 61px;
+ 
+}
+@media (max-width: 992px)
+{
+    #hero{
+        margin: 0 0 80px;
+    }
+    #hero .bannerCnt h4 {
+        font-size: 20px;
+        margin: 37px 0 8px;
+       }
+    #hero .bannerCnt h1 {
+            font-size: 46px;
+            margin: 0 ;
+        }
+    #hero .bannerCnt p {
+            margin: 15px 0 20px;
+            font-size: 15px;
+           
+        }
+    .primary-btn {
+            font-size: 14px;
+            border-radius: 12px;
+            padding: 10px 22px;
+            
+        }
+     element.style {
+            padding: 5px;
+        }
+    .ghost {
+            
+            padding: 11px 13px;
+        }
+     #hero .bannerCnt .sociallinks h5 {
+         font-size: 19px;
+
+        }
+     #hero .bannerCnt .sociallinks {
+            margin-top: 25px;
+            margin-bottom: 15px; 
+        }
+
+}
+/* hero section end */
+
+
+
+/* about section */
+#about {
+    
+    background: linear-gradient(95.13deg, #fc0 -21.32%, #fff5cb 111.64%);
+}
+#about .abouttext{
+    position: relative;
+}
+#about .abouttext h2{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 50px;
+        color: #353535;
+        margin: 0 0;
+}
+#about .abouttext p{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 190%;
+        color: #353535;
+        margin: 26px 0 45px;
+}
+#about .abouttext .ghost{
+    border: 1px solid #bd9505;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+#about .abouttext .ghost a{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 180%;
+        color: #353535;
+}
+#about .cardimg{
+    position: absolute;
+    left: 82%;
+    bottom: -325px;
+    display: block;
+}
+
+@media (max-width: 992px)
+{ 
+   
+
+   #about .abouttext h2 {
+      font-size: 20px;
+      margin: 43px 0 0;
+    
+   }
+   #about .abouttext p {
+      line-height: 183%;
+      font-size: 13px;
+      margin: 15px 0 30px;
+     
+   }
+   #about.ghost {
+       border-radius: 10px;
+       padding: 6px 13px;
+     }
+
+
+   #about .cardimgmbl{ 
+     position: absolute;
+     left: 260px;
+     bottom: -134px;
+     width: 87px;
+     height: 44px;
+        
+  }
+
+
+}
+/* about section end */
+
+
+/* ashikurcard section */
+#ashikurcard {
+  margin: 76px 0 85px;
+}
+#ashikurcard .row {
+    justify-content:center;
+}
+#ashikurcard .card{
+    margin-left: 32px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border-radius: 20px;
+    width: 320px;
+    
+}
+#ashikurcard .card .cardicon{
+    text-align: center;
+    
+}
+#ashikurcard .card .cardicon img{
+    width: 78px;
+    height: 78px;
+    margin:39px 0 18px ;
+}
+#ashikurcard .card .cardtext {
+
+    text-align: center;
+   
+}
+#ashikurcard .card .cardtext h6 {
+    font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 180%;
+        color: #353535;
+        margin: 0 0 15px;
+}
+#ashikurcard .card .cardtext p{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 190%;
+        color: #7a7a7a;
+        margin: 0 0 57px;
+}
+@media (max-width: 992px){
+    #ashikurcard {
+        margin: 66px 0 75px;
+    }
+    #ashikurcard .row {
+            justify-content: normal;
+        }
+    #ashikurcard .card .cardicon {
+      text-align: start;
+      display: inline;
+       }
+    #ashikurcard .card .cardicon img {
+      width: 47px;
+      height: 47px;
+      margin: 26px 0 0 17px;
+      }
+ #ashikurcard .card .cardtext {
+     /* text-align: center; */
+     display: inline-block;
+ }
+#ashikurcard .card .cardtext h6 {
+    margin: -52px -32px 9px -63px;
+    font-size: 16px;
+}
+#ashikurcard .card .cardtext p {
+    margin: -9px -9px 3px 83px;
+    text-align: left;
+    font-size: 13px;
+}
+
+#ashikurcard .card {
+    margin-bottom: 20px;
+}
+
+
+
+
+}
+/* ashikurcard section end*/
+
+/* branding section*/
+#branding .container {
+    border-radius: 30px;
+    background: linear-gradient(95.13deg, #fc0 -21.21%, #fff5cb 111.27%);
+}
+#branding .branding-text{
+    position: relative;
+}
+#branding .branding-text h2 {
+    font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 44px;
+        color: #353535;
+        margin: 82px 0 21px;
+}
+
+#branding .branding-text p{
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 190%;
+        color: #353535;
+        
+}
+
+#branding .branding-text .branding-btn {
+    margin: 35px 0 76px;
+}
+#branding .ghost {
+    border: 1px solid #bd9505;
+    border-radius: 10px;
+    padding: 11px 15px;
+
+}
+
+#branding .branding-btn a{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 180%;
+        text-align: center;
+        color: #353535;
+}
+#branding .branding-text .pstion-1st{
+    position: absolute;
+    right: -105px ;
+    top: -8%;
+}
+#branding .branding-text .pstion-2nd{
+    position: absolute;
+    right: 330px;
+    top: 65%;
+}
+@media (max-width: 992px){
+    #branding .branding-text h2 {
+            font-size: 24px;
+            margin: 27px 0px 6px 40px;
+        }
+   #branding .branding-text p {
+       margin: 12px 0 0 40px;
+       font-size: 14px;
+    }
+   #branding .ghost {
+     border-radius: 10px;
+     padding: 7px 10px;
+    }
+   #branding .branding-btn a {
+       font-size: 17px;
+       margin: 30px 0 0 40px;
+    }
+   .img-fluid {
+     width: 308px;
+    height: 280px;
+    }
+   #branding .branding-text .pstion-1st {
+    position: absolute;
+    right: 55px;
+    top: -13%;
+    }
+   #branding .branding-text .pstion-2nd {
+       position: absolute;
+       right: 160px;
+       top: 77%;
+   }
+ 
+
+
+
+
+
+}
+/* branding section end */
+
+/* helpcenter section */
+#helphand {
+    margin: 100px 0 100px;
+}
+/* helpcenter section */
+#helphand .help-card{
+box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.10);
+    background: #fff;
+    border-radius: 20px;
+    width: 380px;
+    height: 92px;
+    margin-bottom: 30px;
+}
+#helphand .help-card .image img{
+   margin: 17px 0 0 10px;
+    
+}
+
+#helphand .help-card .text h5 {
+    font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 180%;
+        color: #353535;
+        margin: 17px 0 0px 15px;
+    }
+#helphand .help-card .text p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 180%;
+    color: #353535;
+    margin: 0 0 0 15px;
+}
+#helphand .help-text h2{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    
+    color: #353535;
+}
+#helphand .help-text p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 190%;
+    color: #353535;
+    margin: 26px 0 32px;
+    padding: 0 0 0 200px;
+}
+#helphand .help-text .customers h6{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 40px;
+    color: #353535;
+}
+#helphand .help-text .customers span{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #353535;
+    margin-top: 10px;
+}
+#helphand .help-text {
+text-align: right;
+}
+@media (max-width: 992px){
+    #helphand .help-text h2 {
+            font-size: 25px;
+            text-align: left;
+        }
+   #helphand .help-text p {
+       margin: 12px 0 16px;
+       padding: 0;
+       font-size: 15px;
+       text-align: left;
+    }
+    #helphand .help-text {
+        text-align: left;
+    }
+#helphand .help-text .customers{
+    margin-bottom: 38px;
+}
+       
+#helphand .help-text .customers h6 {
+    font-size: 20px;
+    
+}
+#helphand .help-text .customers span{
+    
+        font-size: 10px;
+        line-height: 180%;
+       
+}
+#helphand .help-card {
+    border-radius: 20px;
+    width: 354px;
+    height: 90px;
+    margin-bottom: 18px;
+}
+#helphand .help-card .image img {
+    margin: 13px 0 0 9px;
+}
+#helphand .help-card .text h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 180%;
+    color: #353535;
+    margin: 13px 0 0px 12px;
+}
+#helphand .help-card .text p {
+    margin: 0px 0px 0px 12px;
+}
+
+
+
+
+
+}
+/* helpcenter section end*/
